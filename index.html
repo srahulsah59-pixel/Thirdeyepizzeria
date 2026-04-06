@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aesthetic Pizza Experience with Premium Quality and Peaceful Ambience in the Heart of Kathmandu.">
+    <title>Third Eye Pizzeria | Premium Pizza in Kathmandu</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome / Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container nav-content">
+            <a href="#" class="logo">Third Eye Pizzeria</a>
+            <nav class="nav-links">
+                <a href="#hero">Home</a>
+                <a href="#about">About</a>
+                <a href="#menu">Menu</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="#menu" class="btn btn-primary d-none-mobile">Order Now</a>
+                <button class="menu-toggle" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Floating actions -->
+    <div class="floating-actions">
+        <a href="tel:9801238684" class="float-btn call" aria-label="Call Us"><i class="fas fa-phone"></i></a>
+        <a href="https://wa.me/9801238684" class="float-btn whatsapp" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    </div>
+
+    <!-- Sticky Order Button (Mobile) -->
+    <a href="#menu" class="sticky-order-btn d-mobile-only">Order Now</a>
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero" style="background-image: url('assets/hero_pizza.png');">
+        <div class="hero-overlay">
+            <div class="container hero-content">
+                <div class="hero-badge">
+                    <span class="rating">4.7 <i class="fas fa-star"></i> Rating</span>
+                    <span class="hours"><i class="far fa-clock"></i> Open Daily 10:00 AM – 8:30 PM</span>
+                </div>
+                <h1>Experience Pizza the Way It Should Be</h1>
+                <p>Quality ingredients, peaceful ambience, and unforgettable flavors in the heart of Kathmandu.</p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn btn-primary btn-large">Order Now</a>
+                    <a href="#contact" class="btn btn-secondary btn-large">Reserve a Table</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRUST INDICATORS -->
+    <section class="trust-indicators">
+        <div class="container trust-grid">
+            <div class="trust-item"><i class="fas fa-parking"></i><span>Parking</span></div>
+            <div class="trust-item"><i class="fas fa-snowflake"></i><span>Air Conditioning</span></div>
+            <div class="trust-item"><i class="fas fa-motorcycle"></i><span>Home Delivery</span></div>
+            <div class="trust-item"><i class="fas fa-calendar-check"></i><span>Online Booking</span></div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about">
+        <div class="container about-content">
+            <div class="about-text">
+                <h2>About Third Eye Pizzeria</h2>
+                <p class="lead-text">Third Eye Pizzeria is built on one simple belief:</p>
+                <h3 class="highlight-text">Quality Over Quantity.</h3>
+                <p>We focus on serving delicious pizza made with care, served in a peaceful and welcoming environment.</p>
+                <p>Located in Museum Marg, Kathmandu, our restaurant has become a favorite spot for families, couples, students, and professionals who want great food and a relaxing dining experience.</p>
+                <p><strong>We believe good food should bring people together.</strong></p>
+                <a href="#menu" class="btn btn-primary mt-2">Explore Menu</a>
+            </div>
+            <div class="about-image">
+                <img src="assets/about_restaurant.png" alt="People enjoying pizza in a peaceful atmosphere" id="about-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- MENU / SERVICES SECTION -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Menu</h2>
+                <p>Crafted with Fresh Ingredients</p>
+            </div>
+            
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="pizza">Pizza</button>
+                <button class="category-btn" data-category="sides">Sides</button>
+                <button class="category-btn" data-category="beverages">Beverages</button>
+                <button class="category-btn" data-category="combos">Special Combos</button>
+            </div>
+
+            <div class="menu-grid">
+                <!-- Pizza Item -->
+                <div class="menu-item" data-category="pizza">
+                    <div class="item-tags"><span class="tag best-seller">Best Seller</span></div>
+                    <div class="item-content">
+                        <h3>Margherita Classico</h3>
+                        <p>Fresh mozzarella, San Marzano tomato sauce, fresh basil, extra virgin olive oil.</p>
+                        <div class="item-footer">
+                            <span class="price">Rs 1,000</span>
+                            <button class="btn btn-outline btn-sm">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pizza Item -->
+                <div class="menu-item" data-category="pizza">
+                    <div class="item-tags"><span class="tag popular">Popular</span></div>
+                    <div class="item-content">
+                        <h3>Pepperoni Perfection</h3>
+                        <p>Premium beef pepperoni, mozzarella, rich tomato sauce, hot honey drizzle.</p>
+                        <div class="item-footer">
+                            <span class="price">Rs 1,300</span>
+                            <button class="btn btn-outline btn-sm">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Sides Item -->
+                 <div class="menu-item" data-category="sides" style="display:none;">
+                    <div class="item-content">
+                        <h3>Garlic Parmesan Bread</h3>
+                        <p>Freshly baked bread with garlic butter, parmesan, and herbs.</p>
+                        <div class="item-footer">
+                            <span class="price">Rs 400</span>
+                            <button class="btn btn-outline btn-sm">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Beverages Item -->
+                 <div class="menu-item" data-category="beverages" style="display:none;">
+                    <div class="item-content">
+                        <h3>Iced Lemon Mint</h3>
+                        <p>Refreshing house-made lemonade with fresh mint leaves.</p>
+                        <div class="item-footer">
+                            <span class="price">Rs 350</span>
+                            <button class="btn btn-outline btn-sm">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Combo Item -->
+                 <div class="menu-item" data-category="combos" style="display:none;">
+                     <div class="item-tags"><span class="tag best-seller">Best Value</span></div>
+                    <div class="item-content">
+                        <h3>Couple's Meal</h3>
+                        <p>2 Regular Pizzas, 1 Garlic Bread, 2 Beverages.</p>
+                        <div class="item-footer">
+                            <span class="price">Rs 2,800</span>
+                            <button class="btn btn-outline btn-sm">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-3">
+                 <button class="btn btn-primary" aria-label="View Full Menu">View Full Menu</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE US SECTION -->
+    <section class="why-choose-us bg-light">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2>Why Choose Third Eye Pizzeria</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-seedling"></i>
+                    <h4>Premium Quality Ingredients</h4>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-spa"></i>
+                    <h4>Peaceful Dining Atmosphere</h4>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-smile"></i>
+                    <h4>Friendly Staff</h4>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-broom"></i>
+                    <h4>Clean & Comfortable Space</h4>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-stopwatch"></i>
+                    <h4>Fast Service</h4>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-pizza-slice"></i>
+                    <h4>Reliable Taste</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES SECTION -->
+    <section class="features">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2>Everything You Need for a Perfect Dining Experience</h2>
+            </div>
+             <div class="amenities-grid">
+                 <div class="amenity"><i class="fas fa-parking"></i> <span>Parking Available</span></div>
+                 <div class="amenity"><i class="fas fa-snowflake"></i> <span>Air Conditioned</span></div>
+                 <div class="amenity"><i class="fas fa-motorcycle"></i> <span>Home Delivery</span></div>
+                 <div class="amenity"><i class="fas fa-calendar-check"></i> <span>Online Booking</span></div>
+                 <div class="amenity"><i class="fas fa-couch"></i> <span>Comfortable Seating</span></div>
+                 <div class="amenity"><i class="fas fa-child"></i> <span>Family Friendly</span></div>
+             </div>
+        </div>
+    </section>
+
+    <!-- CUSTOMER REVIEWS SECTION -->
+    <section class="reviews bg-light">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2>What Our Customers Say</h2>
+            </div>
+            <div class="reviews-slider">
+                <div class="review-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"The food was really good and the ambience was peaceful. The service was top class."</p>
+                    <p class="customer-name">- Anil Gurung</p>
+                </div>
+                <div class="review-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Best pizza I've had in Kathmandu. The place has such a relaxing vibe. Perfect for dates!"</p>
+                    <p class="customer-name">- Sandhya Shrestha</p>
+                </div>
+                <div class="review-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="review-text">"Quality ingredients are very noticeable. I love their mozzarella cheese. Friendly staff too."</p>
+                    <p class="customer-name">- Nitesh Maharjan</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LOCATION SECTION -->
+    <section id="contact" class="location">
+        <div class="container">
+            <div class="location-wrapper">
+                <div class="location-info">
+                    <h2>Visit Us</h2>
+                    <ul class="contact-list">
+                        <li><i class="fas fa-map-marker-alt"></i> <div><strong>Address:</strong><br>Museum Marg, Kathmandu 44600</div></li>
+                        <li><i class="fas fa-phone-alt"></i> <div><strong>Phone:</strong><br>9801238684</div></li>
+                        <li><i class="far fa-clock"></i> <div><strong>Working Hours:</strong><br>10:00 AM – 8:30 PM</div></li>
+                    </ul>
+                    <div class="location-actions">
+                        <a href="tel:9801238684" class="btn btn-primary"><i class="fas fa-phone"></i> Call Now</a>
+                        <a href="https://maps.google.com/?q=Museum+Marg+Kathmandu+44600" target="_blank" rel="noopener noreferrer" class="btn btn-outline"><i class="fas fa-directions"></i> Get Directions</a>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <!-- Stylized Map Placeholder instead of iframe -->
+                    <div class="map-placeholder">
+                        <i class="fas fa-map-marked-alt fa-3x"></i>
+                        <p style="margin-top: 15px; font-weight: 600;">Map View</p>
+                        <p class="small">Museum Marg, Kathmandu</p>
+                        <a href="https://maps.google.com/?q=Museum+Marg+Kathmandu+44600" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm mt-2" style="background: var(--bg-white); color: var(--primary); border:none;">Open in Google Maps</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CALL TO ACTION SECTION -->
+    <section class="cta">
+        <div class="container text-center">
+            <h2>Ready to Enjoy Great Pizza?</h2>
+            <div class="cta-buttons">
+                <a href="#menu" class="btn btn-primary btn-large">Order Now</a>
+                <a href="#contact" class="btn btn-secondary btn-large">Book a Table</a>
+                <a href="tel:9801238684" class="btn btn-outline-light btn-large">Call Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>Third Eye Pizzeria</h3>
+                    <p>Delicious pizza made with care, served in a peaceful and welcoming environment.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <p>Museum Marg, Kathmandu 44600</p>
+                    <p>9801238684</p>
+                    <p>10:00 AM – 8:30 PM</p>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Third Eye Pizzeria</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
